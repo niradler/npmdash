@@ -8,5 +8,20 @@
   "keywords": [],
   "author": "Nir Adler <niradler55@email.com> (https://niradler.com)",
   "license": "MIT",
-  "description": ""
+  "description": "New Project",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "puppeteer": "^1.17.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niradler/npmdash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niradler/npmdash/issues"
+  },
+  "homepage": "https://github.com/niradler/npmdash#readme"
 }
