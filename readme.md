@@ -1,1 +1,3 @@
-New Project 
+# npmdash
+
+fetch npm packages info
