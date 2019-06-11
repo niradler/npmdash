@@ -1,8 +1,16 @@
 {
   "name": "npmdash",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
+    "clean": "rimraf dist/*",
+    "copy-assets": "ts-node tools/copyAssets",
+    "lint": "tslint -c tslint.json -p tsconfig.json --fix",
+    "tsc": "tsc",
+    "build": "npm-run-all clean lint tsc copy-assets",
+    "dev:start": "npm-run-all build start",
+    "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,11 +19,27 @@
   "description": "New Project",
   "dependencies": {
     "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
     "puppeteer": "^1.17.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.0.8",
+    "fs-extra": "^8.0.1",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.2.0",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niradler/npmdash.git"

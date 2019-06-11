@@ -1,8 +1,8 @@
 const rp = require("request-promise");
 
-const getPackageInfo = (name, version) => {
+const getPackageInfo = name => {
   const opt = {
-    uri: "https://api.npms.io/v2/package/" + name,
+    uri: `${process.env.NPM_API_V2_URL}/v2/package/${name}`,
     json: true
   };
 
