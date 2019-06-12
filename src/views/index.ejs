@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Guitar Inventory 2</title>
+    <title>NPM Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -12,9 +12,30 @@
 
 <body>
     <div class="container">
-        <h1 class="header">Guitar Inventory</h1>
-        <a class="btn" href="/guitars"><i class="material-icons right">arrow_forward</i>Get started!</a>
+        <h1 class="header">NPM Dashboard</h1>
+        <form id="form">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="username" id="username" type="text">
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-field col s6">
+                    <button class="waves-effect waves-light btn" type="submit">search</button>
+                </div>
+            </div>
+        </form>
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault()
+            const username = document.querySelector("#username").value;
+            if (username)
+                location.assign("/npm/dashboard/" + username)
+        });
+    </script>
 </body>
 
 </html>

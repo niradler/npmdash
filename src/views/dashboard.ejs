@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NPM Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">NPM Dashboard</h1>
+        <h5 class="header"><%= total %> Total Downloads</h5>
+        <div class="">
+
+            <% data.forEach(function(pkg){ %>
+            <% if (pkg.info) { %>
+
+            <div class="col s12 m6">
+                <div class="card darken-1">
+                    <div class="card-content ">
+                        <span class="card-title"><%= pkg.name %></span>
+                        <p>
+                            <%= pkg.info.collected.metadata.description %>
+                        </p>
+                        <% if (pkg.info.collected.github) { %>
+                        <div>
+                            <h6 class="header">Github
+                                <span class="badge white-text yellow lighten-1"
+                                    data-badge-caption="Stars"><%= pkg.info.collected.github.starsCount %></span>
+                                <span class="badge white-text cyan lighten-2"
+                                    data-badge-caption="Forks"><%= pkg.info.collected.github.forksCount %></span>
+                                <span class="badge white-text blue lighten-2"
+                                    data-badge-caption="Issues"><%= pkg.info.collected.github.issues.count %></span>
+                            </h6>
+
+                        </div>
+                        <% } %>
+                        <div>
+                            <h6 class="header">Downloads
+                                <span class="badge white-text teal lighten-2"
+                                    data-badge-caption="Total downloads"><%= pkg.downloads %></span>
+                                <span class="badge white-text deep-purple lighten-2"
+                                    data-badge-caption="Monthly downloads"><%= pkg.monthly %></span>
+                            </h6>
+
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a target="_blank" href="<%= pkg.info.collected.metadata.links.npm %>">Open on npmjs</a>
+                        <a target="_blank" href="<%= pkg.info.collected.metadata.links.repository %>">Open on github</a>
+                    </div>
+                </div>
+            </div>
+
+            <% } %>
+            <% }); %>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

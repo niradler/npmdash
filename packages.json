@@ -1,5 +1,5 @@
 {
-  "total": 19483,
+  "total": 19528,
   "packages": [
     "react-form-inc",
     "@niradler55/timejs",
@@ -206,23 +206,18 @@
           }
         },
         "score": {
-          "final": 0.4402159006563425,
+          "final": 0.44027784716675555,
           "detail": {
-            "quality": 0.7796990606098826,
-            "popularity": 0.01470102456977614,
-            "maintenance": 0.5747452110684459
+            "quality": 0.7797349791719854,
+            "popularity": 0.014769975241024387,
+            "maintenance": 0.5748224630880041
           }
         }
       },
       "downloads": 417,
-      "monthly": {
-        "downloads": 12,
-        "package": "react-form-inc",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 12
     },
-    { "name": "@niradler55/timejs", "downloads": 185 },
+    { "name": "@niradler55/timejs", "downloads": 185, "monthly": null },
     {
       "name": "server-mapping",
       "info": {
@@ -403,21 +398,16 @@
           }
         },
         "score": {
-          "final": 0.451104848079876,
+          "final": 0.45118622977956446,
           "detail": {
-            "quality": 0.8053919410696202,
-            "popularity": 0.014242739749160235,
-            "maintenance": 0.5842923052765254
+            "quality": 0.8054797151551981,
+            "popularity": 0.014318027195064673,
+            "maintenance": 0.5843743020420925
           }
         }
       },
-      "downloads": 502,
-      "monthly": {
-        "downloads": 18,
-        "package": "server-mapping",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 507,
+      "monthly": 23
     },
     {
       "name": "free-to-play",
@@ -525,21 +515,16 @@
           }
         },
         "score": {
-          "final": 0.0882506279425815,
+          "final": 0.08827539236576834,
           "detail": {
             "quality": 0.2,
-            "popularity": 0.0022224296589482178,
-            "maintenance": 0.07849365017699893
+            "popularity": 0.0022234805749725976,
+            "maintenance": 0.07856335475579408
           }
         }
       },
       "downloads": 208,
-      "monthly": {
-        "downloads": 7,
-        "package": "free-to-play",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 7
     },
     {
       "name": "tracking-number-validation",
@@ -728,23 +713,18 @@
           }
         },
         "score": {
-          "final": 0.6036542600745438,
+          "final": 0.6036795074787342,
           "detail": {
-            "quality": 0.8042368507470816,
-            "popularity": 0.035527161456568264,
-            "maintenance": 0.9998534238303443
+            "quality": 0.804260314837898,
+            "popularity": 0.035578955922274204,
+            "maintenance": 0.9998536527273396
           }
         }
       },
-      "downloads": 12060,
-      "monthly": {
-        "downloads": 222,
-        "package": "tracking-number-validation",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 12069,
+      "monthly": 231
     },
-    { "name": "@niradler55/schedulerjs", "downloads": 255 },
+    { "name": "@niradler55/schedulerjs", "downloads": 258, "monthly": null },
     {
       "name": "remote-deployer",
       "info": {
@@ -970,21 +950,16 @@
           }
         },
         "score": {
-          "final": 0.48231634582052685,
+          "final": 0.48236450383646023,
           "detail": {
-            "quality": 0.4464610246331407,
-            "popularity": 0.020115663680533597,
-            "maintenance": 0.9752501604068513
+            "quality": 0.44650287523325244,
+            "popularity": 0.02019696558487236,
+            "maintenance": 0.9752705808907978
           }
         }
       },
       "downloads": 1681,
-      "monthly": {
-        "downloads": 74,
-        "package": "remote-deployer",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 74
     },
     {
       "name": "url-query-search",
@@ -1174,21 +1149,16 @@
           }
         },
         "score": {
-          "final": 0.4018268006585961,
+          "final": 0.40193109834454827,
           "detail": {
-            "quality": 0.3969210805361726,
-            "popularity": 0.013222539059336496,
-            "maintenance": 0.7946359652199331
+            "quality": 0.3969736432723331,
+            "popularity": 0.013315311289909983,
+            "maintenance": 0.7947961326039424
           }
         }
       },
       "downloads": 300,
-      "monthly": {
-        "downloads": 16,
-        "package": "url-query-search",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 16
     },
     {
       "name": "params-check",
@@ -1367,21 +1337,16 @@
           }
         },
         "score": {
-          "final": 0.5578100108791129,
+          "final": 0.5578871186259086,
           "detail": {
-            "quality": 0.8014053369104239,
-            "popularity": 0.028305557032058802,
-            "maintenance": 0.8785184709850431
+            "quality": 0.8014571694385224,
+            "popularity": 0.028377243950196713,
+            "maintenance": 0.8786226640336657
           }
         }
       },
       "downloads": 645,
-      "monthly": {
-        "downloads": 346,
-        "package": "params-check",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 346
     },
     {
       "name": "http-checks",
@@ -1491,21 +1456,16 @@
           }
         },
         "score": {
-          "final": 0.18342123151147116,
+          "final": 0.1834700128161651,
           "detail": {
-            "quality": 0.4154112339448939,
-            "popularity": 0.003822257628984743,
-            "maintenance": 0.1641716318795953
+            "quality": 0.415447383658022,
+            "popularity": 0.003799469583642576,
+            "maintenance": 0.16430280961281027
           }
         }
       },
-      "downloads": 105,
-      "monthly": {
-        "downloads": 14,
-        "package": "http-checks",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 106,
+      "monthly": 15
     },
     {
       "name": "mongo-simple-adapter",
@@ -1679,21 +1639,16 @@
           }
         },
         "score": {
-          "final": 0.5583507675944388,
+          "final": 0.5583905892463205,
           "detail": {
-            "quality": 0.6820660891171871,
-            "popularity": 0.019777671331671468,
-            "maintenance": 0.9908821596948503
+            "quality": 0.6821180098162334,
+            "popularity": 0.01983657824895495,
+            "maintenance": 0.990892525469475
           }
         }
       },
       "downloads": 226,
-      "monthly": {
-        "downloads": 13,
-        "package": "mongo-simple-adapter",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 13
     },
     {
       "name": "nextjs-middleware",
@@ -1884,21 +1839,16 @@
           }
         },
         "score": {
-          "final": 0.48129814636346957,
+          "final": 0.4813366107402859,
           "detail": {
-            "quality": 0.41929402645159436,
-            "popularity": 0.02001426556404157,
-            "maintenance": 0.9957284156587907
+            "quality": 0.4193441989873513,
+            "popularity": 0.02007336177359285,
+            "maintenance": 0.9957362126380658
           }
         }
       },
       "downloads": 239,
-      "monthly": {
-        "downloads": 14,
-        "package": "nextjs-middleware",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 14
     },
     {
       "name": "micro-swagger",
@@ -2113,21 +2063,16 @@
           }
         },
         "score": {
-          "final": 0.4840736619964714,
+          "final": 0.4841110630610588,
           "detail": {
-            "quality": 0.40551614354322396,
-            "popularity": 0.03557653973056707,
-            "maintenance": 0.9999058000794452
+            "quality": 0.40557624111674373,
+            "popularity": 0.03563184928955547,
+            "maintenance": 0.999905838499118
           }
         }
       },
-      "downloads": 1055,
-      "monthly": {
-        "downloads": 170,
-        "package": "micro-swagger",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 1056,
+      "monthly": 171
     },
     {
       "name": "create-index-file",
@@ -2241,21 +2186,16 @@
           }
         },
         "score": {
-          "final": 0.26394671437406636,
+          "final": 0.26394530980903336,
           "detail": {
-            "quality": 0.481342113783182,
-            "popularity": 0.008239733682895472,
-            "maintenance": 0.3333147812859954
+            "quality": 0.48136064937888173,
+            "popularity": 0.008219803030294409,
+            "maintenance": 0.33331481124218804
           }
         }
       },
       "downloads": 203,
-      "monthly": {
-        "downloads": 14,
-        "package": "create-index-file",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 14
     },
     {
       "name": "create-serverless-project",
@@ -2431,21 +2371,16 @@
           }
         },
         "score": {
-          "final": 0.4646094253677321,
+          "final": 0.46465353773151963,
           "detail": {
-            "quality": 0.4109971833143996,
-            "popularity": 0.02094210437176149,
-            "maintenance": 0.9542300966951307
+            "quality": 0.4110336805441339,
+            "popularity": 0.021003833009087886,
+            "maintenance": 0.9542631200431392
           }
         }
       },
       "downloads": 105,
-      "monthly": {
-        "downloads": 16,
-        "package": "create-serverless-project",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 16
     },
     {
       "name": "create-open-source",
@@ -2618,21 +2553,16 @@
           }
         },
         "score": {
-          "final": 0.48066652685009753,
+          "final": 0.4806969774233982,
           "detail": {
-            "quality": 0.40586152324509756,
-            "popularity": 0.029748995638334594,
-            "maintenance": 0.9957026325804319
+            "quality": 0.4058982979879292,
+            "popularity": 0.029796688712844095,
+            "maintenance": 0.9957104199357829
           }
         }
       },
-      "downloads": 399,
-      "monthly": {
-        "downloads": 63,
-        "package": "create-open-source",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 411,
+      "monthly": 75
     },
     {
       "name": "node-runnder",
@@ -2745,21 +2675,16 @@
           }
         },
         "score": {
-          "final": 0.20830044308084125,
+          "final": 0.20830179105342844,
           "detail": {
-            "quality": 0.30353717941742286,
-            "popularity": 0.004536541561562106,
-            "maintenance": 0.33043285631162195
+            "quality": 0.30356161363080797,
+            "popularity": 0.004513984411694234,
+            "maintenance": 0.33043832120026595
           }
         }
       },
-      "downloads": 39,
-      "monthly": {
-        "downloads": 15,
-        "package": "node-runnder",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 41,
+      "monthly": 17
     },
     {
       "name": "cmd-runner",
@@ -2877,21 +2802,16 @@
           }
         },
         "score": {
-          "final": 0.329551463122092,
+          "final": 0.3295598556128314,
           "detail": {
-            "quality": 0.7038329486221351,
-            "popularity": 0.005640025858432158,
-            "maintenance": 0.3326501985285721
+            "quality": 0.7038845410709469,
+            "popularity": 0.005618580602201901,
+            "maintenance": 0.33265140023079054
           }
         }
       },
-      "downloads": 63,
-      "monthly": {
-        "downloads": 20,
-        "package": "cmd-runner",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 66,
+      "monthly": 23
     },
     {
       "name": "apigateway-export-tool",
@@ -3074,21 +2994,16 @@
           }
         },
         "score": {
-          "final": 0.5204998503121347,
+          "final": 0.5205368376232393,
           "detail": {
-            "quality": 0.7038329486221351,
-            "popularity": 0.050664475133431294,
-            "maintenance": 0.8331925697965521
+            "quality": 0.7038845410709469,
+            "popularity": 0.050725872945001915,
+            "maintenance": 0.8331926279177275
           }
         }
       },
-      "downloads": 465,
-      "monthly": {
-        "downloads": 141,
-        "package": "apigateway-export-tool",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 468,
+      "monthly": 144
     },
     {
       "name": "object-remap",
@@ -3272,21 +3187,16 @@
           }
         },
         "score": {
-          "final": 0.5269551542504841,
+          "final": 0.5269867362649794,
           "detail": {
-            "quality": 0.722248541442569,
-            "popularity": 0.05693108239725811,
-            "maintenance": 0.8295848942247803
+            "quality": 0.7222979692404004,
+            "popularity": 0.056971402599768795,
+            "maintenance": 0.8295924416655434
           }
         }
       },
-      "downloads": 213,
-      "monthly": {
-        "downloads": 126,
-        "package": "object-remap",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 216,
+      "monthly": 129
     },
     {
       "name": "lambda-cli-tools",
@@ -3403,21 +3313,16 @@
           }
         },
         "score": {
-          "final": 0.09272414564815794,
+          "final": 0.09273182602731787,
           "detail": {
-            "quality": 0.3090804854938598,
+            "quality": 0.3091060867577263,
             "popularity": 0,
             "maintenance": 0
           }
         }
       },
       "downloads": 22,
-      "monthly": {
-        "downloads": 22,
-        "package": "lambda-cli-tools",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 22
     },
     {
       "name": "git-portfolio",
@@ -3532,21 +3437,16 @@
           }
         },
         "score": {
-          "final": 0.09272414564815794,
+          "final": 0.09273182602731787,
           "detail": {
-            "quality": 0.3090804854938598,
+            "quality": 0.3091060867577263,
             "popularity": 0,
             "maintenance": 0
           }
         }
       },
       "downloads": 22,
-      "monthly": {
-        "downloads": 22,
-        "package": "git-portfolio",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 22
     },
     {
       "name": "protfolio",
@@ -3672,21 +3572,16 @@
           }
         },
         "score": {
-          "final": 0.1987724585469585,
+          "final": 0.19878764036575117,
           "detail": {
-            "quality": 0.662574861823195,
+            "quality": 0.6626254678858372,
             "popularity": 0,
             "maintenance": 0
           }
         }
       },
       "downloads": 65,
-      "monthly": {
-        "downloads": 65,
-        "package": "protfolio",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "monthly": 65
     },
     {
       "name": "npmdash",
@@ -3799,21 +3694,16 @@
           }
         },
         "score": {
-          "final": 0.09106115382522685,
+          "final": 0.09106848408924238,
           "detail": {
-            "quality": 0.30353717941742286,
+            "quality": 0.30356161363080797,
             "popularity": 0,
             "maintenance": 0
           }
         }
       },
-      "downloads": 9,
-      "monthly": {
-        "downloads": 9,
-        "package": "npmdash",
-        "start": "2019-05-13",
-        "end": "2019-06-12"
-      }
+      "downloads": 12,
+      "monthly": 12
     }
   ]
 }

@@ -1,25 +1,24 @@
 const moment = require("moment");
 const _ = require("lodash");
-const { getDownloads, getPackageInfo } = require(".");
-
-const url = process.env.NPM_URL;
 const puppeteer = require("puppeteer");
+const { getDownloads, getPackageInfo } = require(".");
 
 const scrap = () => {
   const packagesNodes = document.querySelectorAll("h3.hover-black");
-  let packages = [];
+  const packages = [];
   packagesNodes.forEach(n => packages.push(n.innerText));
 
   return {
-    packages
+    packages,
   };
 };
 
 const packagesByUsername = async (username = "niradler55") => {
-  let res = {};
+  const res = {};
   const browser = await puppeteer.launch();
   try {
     const page = await browser.newPage();
+    const url = process.env.NPM_URL;
     await page.goto(`${url}/~${username}`);
 
     const { packages } = await page.evaluate(scrap);
@@ -27,7 +26,7 @@ const packagesByUsername = async (username = "niradler55") => {
     const data = [];
     for (let i = 0; i < packages.length; i++) {
       const name = packages[i];
-      let pkg = { name };
+      const pkg = { name };
 
       const downloadsInfo = await getDownloads(name).catch(e => console.log(e));
       pkg.info = await getPackageInfo(name).catch(e => console.log(e));
@@ -46,12 +45,12 @@ const packagesByUsername = async (username = "niradler55") => {
       moment()
         .subtract(30, "days")
         .format("YYYY-MM-DD"),
-      moment().format("YYYY-MM-DD")
+      moment().format("YYYY-MM-DD"),
     ).catch(e => console.log(e));
 
     res.total = data.reduce(
       (sum, pkg) => (sum = sum + (pkg.downloads ? pkg.downloads : 0)),
-      0
+      0,
     );
 
     res.packages = packages;
