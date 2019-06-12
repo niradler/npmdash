@@ -6,7 +6,7 @@ import packagesByUsername from "./npm/packagesByUsername";
 dotenv.config();
 
 const app = express();
-const port = process.env.SERVER_PORT;
+const port = process.env.PORT;
 
 interface IPackagesData {
   total: number;
