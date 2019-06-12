@@ -9,7 +9,7 @@ const scrap = () => {
   packagesNodes.forEach(n => packages.push(n.innerText));
 
   return {
-    packages,
+    packages
   };
 };
 
@@ -17,7 +17,7 @@ const packagesByUsername = async (username = "niradler55") => {
   const res = {};
   const browser = await puppeteer.launch({
     headless: true,
-    args: ["--no-sandbox"],
+    args: ["--no-sandbox"]
   });
   try {
     const page = await browser.newPage();
@@ -48,12 +48,12 @@ const packagesByUsername = async (username = "niradler55") => {
       moment()
         .subtract(30, "days")
         .format("YYYY-MM-DD"),
-      moment().format("YYYY-MM-DD"),
+      moment().format("YYYY-MM-DD")
     ).catch(e => console.log(e));
 
     res.total = data.reduce(
       (sum, pkg) => (sum = sum + (pkg.downloads ? pkg.downloads : 0)),
-      0,
+      0
     );
 
     res.packages = packages;

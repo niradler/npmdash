@@ -12,6 +12,10 @@ RUN  apt-get update \
     && wget --quiet https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O /usr/sbin/wait-for-it.sh \
     && chmod +x /usr/sbin/wait-for-it.sh
 
+ENV NPM_API_URL https://api.npmjs.org
+ENV NPM_API_V2_URL https://api.npms.io
+ENV NPM_URL https://www.npmjs.com
+
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --production --silent && mv node_modules ../
