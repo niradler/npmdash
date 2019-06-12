@@ -6,7 +6,7 @@ import packagesByUsername from "./npm/packagesByUsername";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 8989;
 
 interface IPackagesData {
   total: number;
@@ -32,7 +32,7 @@ app.get("/npm/dashboard/:username", async (req, res) => {
       data = await packagesByUsername(req.params.username);
     }
 
-    if (data.packages.length === 0) {
+    if (!data.packages || data.packages.length === 0) {
       throw new Error("Not Found!");
     }
 

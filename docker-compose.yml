@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  npmdash:
+    image: npmdash
+    build: .
+    environment:
+      NODE_ENV: prod
+    ports:
+      - 8989:8989

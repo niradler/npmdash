@@ -15,7 +15,10 @@ const scrap = () => {
 
 const packagesByUsername = async (username = "niradler55") => {
   const res = {};
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox"],
+  });
   try {
     const page = await browser.newPage();
     const url = process.env.NPM_URL;
