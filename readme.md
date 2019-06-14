@@ -1,6 +1,6 @@
 # npmdash
 
-fetch npm packages info, like downloads, stars, issues etc...
+fetch and display npm packages info, like downloads, stars, issues etc...
 
 [Try it out](http://npm.devresources.site/)
 

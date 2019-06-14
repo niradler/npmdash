@@ -16,10 +16,14 @@
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Nir Adler <niradler55@email.com> (https://niradler.com)",
+  "keywords": [
+    "npm",
+    "stats",
+    "downloads"
+  ],
+  "author": "Nir Adler <me@niradler.com> (https://niradler.com)",
   "license": "MIT",
-  "description": "New Project",
+  "description": "fetch and display npm packages info, like downloads, stars, issues etc...",
   "dependencies": {
     "commander": "^2.20.0",
     "dotenv": "^8.0.0",
