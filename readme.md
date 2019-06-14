@@ -11,7 +11,7 @@ npm i -g npmdash
 npmdash -u <npm username>
 ```
 
-### Tech Stack
+### tech stack
 - nodejs
 - typescript
 - puppeteer (for packages list)
