@@ -12,3 +12,7 @@ npx npmdash -u <npm username>
 npm i -g npmdash
 npmdash -u <npm username>
 ```
+### screenshots
+
+<img src="assets/screencapture-npmdash-search-view.png" hight="250">
+<img src="assets/screencapture-npmdash-packages-view.png" hight="250">
