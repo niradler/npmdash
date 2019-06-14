@@ -2,6 +2,9 @@
   "name": "npmdash",
   "version": "0.0.1",
   "main": "dist/app.js",
+  "bin": {
+    "npmdash": "npmdash.js"
+  },
   "scripts": {
     "clean": "rimraf dist/*",
     "copy-assets": "ts-node tools/copyAssets",
@@ -18,11 +21,14 @@
   "license": "MIT",
   "description": "New Project",
   "dependencies": {
+    "commander": "^2.20.0",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
+    "execa": "^1.0.0",
     "express": "^4.17.1",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
+    "open": "^6.3.0",
     "puppeteer": "^1.17.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
