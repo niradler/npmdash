@@ -14,5 +14,5 @@ npmdash -u <npm username>
 ```
 ### screenshots
 
-<img src="assets/screencapture-npmdash-search-view.png" height="450">
-<img src="assets/screencapture-npmdash-packages-view.png" height="450">
+<img src="assets/screencapture-npmdash-search-view.png">
+<img src="assets/screencapture-npmdash-packages-view.png" >
