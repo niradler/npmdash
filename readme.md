@@ -7,8 +7,6 @@ fetch and display npm packages info, like downloads, stars, issues etc...
 ### cli
 
 ```
-npx npmdash -u <npm username>
-# or
 npm i -g npmdash
 npmdash -u <npm username>
 ```
