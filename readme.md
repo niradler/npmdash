@@ -11,6 +11,13 @@ npm i -g npmdash
 npmdash -u <npm username>
 ```
 
+### docker usage
+
+```
+docker pull niradler/npmdash
+docker container run -p 8989:8989 npmdash
+```
+
 ### tech stack
 - nodejs
 - typescript
