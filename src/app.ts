@@ -27,7 +27,7 @@ app.get("/npm/dashboard/:username", async (req, res) => {
 
     let npmInfo: IPackagesData;
     if (isTest) {
-      npmInfo = require("../packages.json");
+      npmInfo = require("../assets/packages.json");
     } else {
       npmInfo = await packagesByUsername(req.params.username);
     }

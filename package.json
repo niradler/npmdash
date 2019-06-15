@@ -1,9 +1,9 @@
 {
   "name": "npmdash",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "main": "dist/app.js",
   "bin": {
-    "npmdash": "npmdash.js"
+    "npmdash": "tools/npmdash.js"
   },
   "scripts": {
     "clean": "rimraf dist/*",
@@ -52,6 +52,9 @@
     "tslint": "^5.17.0",
     "typescript": "^3.5.1"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niradler/npmdash.git"
