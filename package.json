@@ -1,6 +1,6 @@
 {
   "name": "npmdash",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/app.js",
   "bin": {
     "npmdash": "tools/npmdash.js"
@@ -53,7 +53,8 @@
     "typescript": "^3.5.1"
   },
   "files": [
-    "dist"
+    "dist",
+    "tools"
   ],
   "repository": {
     "type": "git",
