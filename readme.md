@@ -22,4 +22,4 @@ npmdash -u <npm username>
 ### screenshots
 
 <img src="assets/screencapture-npmdash-search-view.png">
-<img src="assets/screencapture-npmdash-packages-view.png" >
+<img src="assets/screencapture-npmdash-packages-view-short.png" >

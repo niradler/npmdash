@@ -11,7 +11,7 @@ const port = process.env.PORT || 8989;
 interface IPackagesData {
   total: number;
   packages: string[];
-  data: object;
+  data: object[];
 }
 
 app.set("views", path.join(__dirname, "views"));
@@ -25,18 +25,25 @@ app.get("/npm/dashboard/:username", async (req, res) => {
   try {
     const isTest = !!req.query.test;
 
-    let data: IPackagesData;
+    let npmInfo: IPackagesData;
     if (isTest) {
-      data = require("../packages.json");
+      npmInfo = require("../packages.json");
     } else {
-      data = await packagesByUsername(req.params.username);
+      npmInfo = await packagesByUsername(req.params.username);
     }
 
-    if (!data.packages || data.packages.length === 0) {
+    const sortBy = "monthly";
+    if (sortBy) {
+      npmInfo.data = npmInfo.data.sort(
+        (a: any, b: any) => b[sortBy] - a[sortBy]
+      );
+    }
+
+    if (!npmInfo.packages || npmInfo.packages.length === 0) {
       throw new Error("Not Found!");
     }
 
-    res.render("dashboard", data);
+    res.render("dashboard", npmInfo);
   } catch (error) {
     res.render("error", { errorMessage: error.message });
   }

@@ -9,7 +9,7 @@ const scrap = () => {
   packagesNodes.forEach(n => packages.push(n.innerText));
 
   return {
-    packages
+    packages,
   };
 };
 
@@ -17,7 +17,7 @@ const packagesByUsername = async (username = "niradler55") => {
   const res = {};
   const browser = await puppeteer.launch({
     headless: true,
-    args: ["--no-sandbox"]
+    args: ["--no-sandbox"],
   });
   try {
     const page = await browser.newPage();
@@ -31,8 +31,12 @@ const packagesByUsername = async (username = "niradler55") => {
       const name = packages[i];
       const pkg = { name };
 
-      const downloadsInfo = await getDownloads(name).catch(e => console.log(e));
-      pkg.info = await getPackageInfo(name).catch(e => console.log(e));
+      const downloadsInfo = await getDownloads(name).catch(e =>
+        console.log(name, e.message),
+      );
+      pkg.info = await getPackageInfo(name).catch(e =>
+        console.log(name, e.message),
+      );
       if (downloadsInfo) {
         pkg.downloads = downloadsInfo.downloads;
       }
@@ -48,12 +52,12 @@ const packagesByUsername = async (username = "niradler55") => {
       moment()
         .subtract(30, "days")
         .format("YYYY-MM-DD"),
-      moment().format("YYYY-MM-DD")
-    ).catch(e => console.log(e));
+      moment().format("YYYY-MM-DD"),
+    ).catch(e => console.log(names, e.message));
 
     res.total = data.reduce(
       (sum, pkg) => (sum = sum + (pkg.downloads ? pkg.downloads : 0)),
-      0
+      0,
     );
 
     res.packages = packages;
