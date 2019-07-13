@@ -2,7 +2,7 @@
 
 fetch and display npm packages info, like downloads, stars, issues etc...
 
-[Try it out](http://npm.devresources.site/)
+[Try it out](http://images.devresources.site:8989/)
 
 ### cli usage
 
